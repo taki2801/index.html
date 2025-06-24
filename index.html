@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hey Steph 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f8bbd0, #ffe0f0);
+      font-family: 'Segoe UI', sans-serif;
+      color: #880e4f;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+    }
+    .heart {
+      font-size: 3rem;
+      animation: pulse 1s infinite alternate;
+    }
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.2); }
+    }
+    button {
+      background-color: #d81b60;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+   <h1>Hey Steph 🌷</h1>
+  <p>There’s something I’ve been meaning to ask you…</p>
+  <div class="heart">💖   </div>
+  <img src="hug.gif"  width="300" />
+  
+  <h1>Will you be my girlfriend?</h1>
+  <button onclick="handleYes()">Yes, I'd love to 💞</button>
+
+  <audio autoplay loop>
+    <source src="your-audio-file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function handleYes() {
+      alert("🥰 I knew you’d say YES! my girllllll!");
+    }
+  </script>
+
+<button onclick="showMessage('Yay! You fish , rn i am the happiest person alive😊')">Yes 💞</button>
+
+<button onclick="showMessage('Oh, you thought you could escape me?you no get choice , I love you 💘 Muah 😘')">No...?</button>
+
+
+<script>
+  function showMessage(message) {
+    alert(message + '\n\nThis moment is now sealed in digital magic — you and me, forever 💘');
+    confettiBurst(); // optional: only if you've added the confetti animation
+  }
+</script>
+
+
+
+
+</body>
+</html>
